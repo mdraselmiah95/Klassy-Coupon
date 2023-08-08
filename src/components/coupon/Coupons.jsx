@@ -7,7 +7,7 @@ const Coupons = () => {
   const [coupons, setCoupons] = useState([]);
 
   useEffect(() => {
-    fetch("data.json")
+    fetch("http://localhost:5000/coupons")
       .then((res) => res.json())
       .then((result) => setCoupons(result));
   }, []);
