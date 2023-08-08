@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import "./Coupons.css";
 
 const Coupons = () => {
@@ -12,6 +13,9 @@ const Coupons = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>Coupons | Make you more Klassy</title>
+      </Helmet>
       <div className="flex flex-wrap justify-center">
         {coupons &&
           coupons.map((coupon) => (

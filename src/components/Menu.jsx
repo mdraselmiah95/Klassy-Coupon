@@ -13,15 +13,17 @@ const Menu = () => {
   return (
     <Navbar className="max-w-[1280px] px-5 mx-auto">
       <NavbarBrand>
-        <img
-          src="https://klassy.com.bd/public/uploads/settings/general/lrChtKFxC6of10DxZNezmW2eFIejECHWnZglkIHG.png"
-          alt=""
-        />
+        <NavLink to="/">
+          <img
+            src="https://klassy.com.bd/public/uploads/settings/general/lrChtKFxC6of10DxZNezmW2eFIejECHWnZglkIHG.png"
+            alt=""
+          />
+        </NavLink>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-10" justify="center">
+      <NavbarContent className="hidden gap-10 sm:flex" justify="center">
         <NavbarItem>
           <NavLink
-            to="/"
+            to="/coupon"
             style={({ isActive }) => {
               return {
                 color: isActive ? "#d3066d" : "",
